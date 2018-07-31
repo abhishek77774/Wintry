@@ -1,29 +1,29 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-21:12
+ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\ddd7b37779b9d04a8aac0d3679b7fe37\AndroidManifest.xml:2:1-11:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-21:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
-		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
-		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-21:12
+		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:5:5-19:19
+ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:5:5-21:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\ddd7b37779b9d04a8aac0d3679b7fe37\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\ddd7b37779b9d04a8aac0d3679b7fe37\AndroidManifest.xml:9:5-20
 	android:supportsRtl
@@ -52,6 +52,14 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:16:27-74
+activity#com.example.abhi.wintry.login
+ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:19:9-43
+	android:name
+		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:19:19-40
+activity#com.example.abhi.wintry.signup
+ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:20:9-53
+	android:name
+		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:20:19-41
 uses-sdk
 INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
