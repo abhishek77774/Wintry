@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "818767792579",
+    "firebase_url": "https://wintry-f4bde.firebaseio.com",
+    "project_id": "wintry-f4bde",
+    "storage_bucket": "wintry-f4bde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818767792579:android:99045c9c7862b288",
+        "android_client_info": {
+          "package_name": "com.example.abhi.wintry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818767792579-bjpor2i8ghaok174l0jsgpjdefr0nt7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abhi.wintry",
+            "certificate_hash": "963f5555038445e9b6687979c5f0454922551598"
+          }
+        },
+        {
+          "client_id": "818767792579-8b4j7at9h5t8oq8ri88mpl4k0bei8ula.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVCdMpvknbbeM0TchVyUshNRlVPLYf-x4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818767792579-8b4j7at9h5t8oq8ri88mpl4k0bei8ula.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
     }
     public void toLogin(View view)
     {
-        Intent intent = new Intent(this, login.class);
+        Intent intent = new Intent(this, signup.class);
         startActivity(intent);
     }
 }

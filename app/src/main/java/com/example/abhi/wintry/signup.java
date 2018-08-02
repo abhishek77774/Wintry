@@ -1,152 +1,109 @@
 package com.example.abhi.wintry;
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.app.ProgressDialog;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import android.text.TextUtils;
 
-public class signup extends Activity {
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuthException;
+import com.google.firebase.auth.FirebaseAuth;
+public class signup extends Activity implements View.OnClickListener {
     SQLiteDatabase db;
     int result;
+    private FirebaseAuth firebaseAuth;
+    private EditText editTextEmail;
+    private EditText editTextPassword;
+    private EditText editTextMobile;
+    private Button buttonSignup;
+    private ProgressDialog progressDialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        db = openOrCreateDatabase("MyDB", MODE_PRIVATE, null);
-        Button btInsert = (Button) findViewById(R.id.button6);
-        btInsert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                f2();
-            }
-        });
+
+        //initializing firebase auth object
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        //initializing views
+        editTextMobile = findViewById(R.id.editTextMobile);
+        editTextEmail = (EditText) findViewById(R.id.editTextEmail);
+        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
+
+        buttonSignup = (Button) findViewById(R.id.buttonSignup);
+
+        progressDialog = new ProgressDialog(this);
+
+        //attaching listener to button
+        buttonSignup.setOnClickListener(this);
     }
 
-    private void f2()
-    {
-        final Dialog d = new Dialog(this);
-        d.setContentView(R.layout.activity_login);
-        EditText user = (EditText) findViewById(R.id.username);
-        EditText pass = (EditText) findViewById(R.id.password);
-        String username = user.getText().toString().trim();
-        String password = pass.getText().toString().trim();
-        String username1=username;
-        Cursor c = db.rawQuery("SELECT * FROM Donors1 where email='"+username+"' and password1='"+password+"'", null);
-        result=c.getCount();
-        if (result>0)
-        {
-            Intent intent2= new Intent(this,login.class);
-            intent2.putExtra("user_id",username1);
-            startActivity(intent2);
+    private void registerUser(){
+
+        //getting email and password from edit texts
+        String email = editTextEmail.getText().toString().trim();
+        String password  = editTextPassword.getText().toString().trim();
+        final String mobile = editTextMobile.getText().toString().trim();
+        //checking if email and passwords are empty
+        if(TextUtils.isEmpty(email)){
+            Toast.makeText(this,"Please enter email",Toast.LENGTH_LONG).show();
+            return;
         }
-        else
-        {
-            Toast.makeText(getApplicationContext(),"Invalid Username or Password",Toast.LENGTH_SHORT).show();
+
+        if(mobile.isEmpty() || mobile.length() < 10){
+            editTextMobile.setError("Enter a valid mobile");
+            editTextMobile.requestFocus();
+            return;
         }
-    }
-    public void dSignup(View view) {
 
-        final Dialog d = new Dialog(this);
-        createDB();
-        createTable();
-        d.setContentView(R.layout.layout_signup);
-        d.setTitle("Insert Data");
-        final EditText firstname = (EditText) d.findViewById(R.id.fname);
-        final EditText lastname = (EditText) d.findViewById(R.id.lname);
-        final EditText demailadd = (EditText) d.findViewById(R.id.demail);
-        final EditText dmobile = (EditText) d.findViewById(R.id.dmob);
-        final EditText daddress = (EditText) d.findViewById(R.id.dadd);
-        final EditText dpassword1 = (EditText) d.findViewById(R.id.pass1);
-        final EditText dpassword2 = (EditText) d.findViewById(R.id.pass2);
-        Button dsignup = (Button) d.findViewById(R.id.dsignup);
+        if(TextUtils.isEmpty(password)){
+            Toast.makeText(this,"Please enter password",Toast.LENGTH_LONG).show();
+            return;
+        }
 
-        dsignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String fname = firstname.getText().toString().trim();
-                String lname = lastname.getText().toString().trim();
-                String dmob = dmobile.getText().toString().trim();
-                String demail = demailadd.getText().toString().trim();
-                String dadd = daddress.getText().toString().trim();
-                String pass1 = dpassword1.getText().toString().trim();
-                String pass2 = dpassword2.getText().toString().trim();
+        //if the email and password are not empty
+        //displaying a progress dialog
 
-                if (fname.length() == 0 || lname.length() == 0 || dadd.length() == 0 || pass1.length() == 0 || pass2.length() == 0 || dadd.length()==0||dmob.length()==0) {
+        progressDialog.setMessage("Registering Please Wait...");
+        progressDialog.show();
 
-                    Toast.makeText(getApplicationContext(), "Please fill all details", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                else if(!fname.matches("[A-Z][a-zA-Z]*" )&&!fname.matches("[a-z][a-za-z]*" ))
-                {
-                    Toast.makeText(getApplicationContext(), "Invalid First Name", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                else if(!lname.matches("[A-Z][a-zA-Z]*" )&&!lname.matches("[a-z][a-za-z]*" ))
-                {
-                    Toast.makeText(getApplicationContext(), "Invalid Last Name", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                else if(!demail.matches("^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
-                        + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"))
-                {
-                    Toast.makeText(getApplicationContext(), "Invalid Email", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                else if(dmob.length()!=10)
-                {
-                    Toast.makeText(getApplicationContext(), "Mobile Number should be 10 digits", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                else if(pass1.length()<6)
-                {
-                    Toast.makeText(getApplicationContext(), "Password should be 6 digit or more", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                else if (!pass1.contentEquals(pass2)) {
-                    Toast.makeText(getApplicationContext(), "Password do not match", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                else
-                {
-
-                    Cursor c = db.rawQuery("SELECT * FROM Donors1 where email='"+demail+"'", null);
-                    int result1 = c.getCount();
-                    if (result1 > 0) {
-                        Toast.makeText(getBaseContext(), "This Email is already registered with us", Toast.LENGTH_SHORT).show();
-                        return;
-                    } else {
-
-
-                        String query = "INSERT INTO Donors1 values('" + fname + "','" + lname + "','" + dmob + "','" + demail + "','" + dadd + "','" + pass1 + "','" + pass2 + "')";
-
-                        db.execSQL(query);
-
-                        Toast.makeText(getBaseContext(), "Registration Completed! Please Sign In", Toast.LENGTH_SHORT).show();
-                        d.dismiss();
+        //creating a new user
+        firebaseAuth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        //checking if success
+                        if(task.isSuccessful()){
+                            Intent intent = new Intent(signup.this, VerifyPhoneActivity.class);
+                            intent.putExtra("mobile", mobile);
+                            startActivity(intent);
+                            Toast.makeText(signup.this,"Next Step",Toast.LENGTH_LONG).show();
+                        }else{
+                            //display some message here
+                            Toast.makeText(signup.this,"Registration Error",Toast.LENGTH_LONG).show();
+                        }
+                        progressDialog.dismiss();
                     }
-                }
-            }
-        });
-        d.show();
-    }
-
-    private void createTable() {
-        db.execSQL("CREATE TABLE IF NOT EXISTS Donors1(firstname varchar, lastname varchar, mobile varchar, email varchar, address varchar, password1 varchar, password2 varchar)");
+                });
 
     }
 
-    public void f30(View view)
-    {
-        Intent intent = new Intent(this, login.class);
-        startActivity(intent);
-    }
-    private void createDB() {
-        db = openOrCreateDatabase("MyDB", MODE_PRIVATE, null);
+    @Override
+    public void onClick(View view) {
+        //calling register method on click
+        registerUser();
     }
 }

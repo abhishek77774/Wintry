@@ -22,6 +22,7 @@
             android:background="@color/colorPrimary"
             android:adjustViewBounds="true"
             android:padding="10dp"
+            android:onClick="toLogin"
             android:scaleType="fitStart"
             android:src="@drawable/newuser2"
             tools:ignore="ContentDescription,RTHardcoded" />
@@ -55,7 +56,6 @@
             android:background="@color/colorPrimary"
             android:adjustViewBounds="true"
             android:padding="3dp"
-            android:onClick="toLogin"
             android:scaleType="fitStart"
             android:src="@drawable/signin"
             tools:ignore="ContentDescription,RTHardcoded" />
