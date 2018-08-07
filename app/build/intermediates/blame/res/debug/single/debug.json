@@ -576,6 +576,10 @@
         "source": "C:\\Users\\Abhi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.2.0.aar\\6838fb2c42fe59d21da75fc7e4b435e6\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
+        "merged": "E:\\Projects\\Abhi-android\\projects\\Polyfills\\cordova\\platforms\\Wintry\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
+        "source": "E:\\Projects\\Abhi-android\\projects\\Polyfills\\cordova\\platforms\\Wintry\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
         "merged": "E:\\Projects\\Abhi-android\\projects\\Polyfills\\cordova\\platforms\\Wintry\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi_abc_ic_ab_back_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Abhi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-22.2.0.aar\\6838fb2c42fe59d21da75fc7e4b435e6\\res\\drawable-ldrtl-xxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
     },

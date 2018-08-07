@@ -56,6 +56,7 @@
             android:background="@color/colorPrimary"
             android:adjustViewBounds="true"
             android:padding="3dp"
+            android:onClick="loginNow"
             android:scaleType="fitStart"
             android:src="@drawable/signin"
             tools:ignore="ContentDescription,RTHardcoded" />

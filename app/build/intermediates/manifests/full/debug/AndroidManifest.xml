@@ -41,6 +41,7 @@
         <activity android:name="com.example.abhi.wintry.login" />
         <activity android:name="com.example.abhi.wintry.signup" />
         <activity android:name="com.example.abhi.wintry.VerifyPhoneActivity" />
+        <activity android:name="com.example.abhi.wintry.ProfileActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

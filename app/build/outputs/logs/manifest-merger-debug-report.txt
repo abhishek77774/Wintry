@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\5c3d674884f588e2ac6975d60320ff4f\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:16.0.2] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.2.aar\b7f9beea7fc397f414cfa462b6bf119a\AndroidManifest.xml:17:1-38:12
 MERGED from [com.android.support:design:22.2.0] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\design-22.2.0.aar\3431eca2037795e91bfc90b12eb28cae\AndroidManifest.xml:17:1-24:12
@@ -33,20 +33,20 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Abhi\.gradl
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\77e6fc11d55c06d092fcdb7974ab5d97\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\8a1a25892864c6ad9b04358452d3c9c0\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\978644d3c3e18cb4a090cfeb4be93cb8\AndroidManifest.xml:17:1-30:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
-		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
-		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:1-27:12
 		INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:2:11-69
@@ -67,7 +67,7 @@ MERGED from [com.google.firebase:firebase-iid:16.0.0] C:\Users\Abhi\.gradle\cach
 	android:name
 		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:7:5-24:19
+ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:7:5-25:19
 MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\5c3d674884f588e2ac6975d60320ff4f\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.1] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\firebase-core-16.0.1.aar\5c3d674884f588e2ac6975d60320ff4f\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:16.0.2] C:\Users\Abhi\.gradle\caches\transforms-1\files-1.1\firebase-auth-16.0.2.aar\b7f9beea7fc397f414cfa462b6bf119a\AndroidManifest.xml:22:5-36:19
@@ -159,9 +159,13 @@ ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\
 	android:name
 		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:22:19-41
 activity#com.example.abhi.wintry.VerifyPhoneActivity
-ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:23:9-66
+ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:23:9-57
 	android:name
 		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:23:19-54
+activity#com.example.abhi.wintry.ProfileActivity
+ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:24:9-62
+	android:name
+		ADDED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml:24:19-50
 uses-sdk
 INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\Projects\Abhi-android\projects\Polyfills\cordova\platforms\Wintry\app\src\main\AndroidManifest.xml
